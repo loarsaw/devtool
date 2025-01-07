@@ -1,0 +1,63 @@
+{
+  "name": "devtool",
+  "productName": "devtool",
+  "version": "1.0.0",
+  "description": "An  application to save my space on my disk and learn from important repositories and share them",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.5.0",
+    "@electron-forge/maker-deb": "^7.5.0",
+    "@electron-forge/maker-dmg": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.5.0",
+    "@electron-forge/maker-squirrel": "^7.5.0",
+    "@electron-forge/maker-wix": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.5.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
+    "@electron-forge/plugin-fuses": "^7.5.0",
+    "@electron-forge/plugin-vite": "^7.5.0",
+    "@electron-forge/publisher-github": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "autoprefixer": "^10.4.20",
+    "electron": "33.0.2",
+    "eslint": "^8.0.1",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.25.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "ts-node": "^10.0.0",
+    "typescript": "~4.5.4",
+    "vite": "^5.0.12"
+  },
+  "keywords": [],
+  "author": {
+    "name": "quickcourse",
+    "email": "amanahmed1385@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@tanstack/react-query": "^5.62.14",
+    "axios": "^1.7.9",
+    "electron-squirrel-startup": "^1.0.1",
+    "electron-store": "^10.0.0",
+    "framer-motion": "^11.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-error-boundary": "^5.0.0",
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^6.28.1",
+    "update-electron-app": "^3.1.0",
+    "zustand": "^5.0.2"
+  }
+}

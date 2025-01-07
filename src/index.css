@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "playwright";
+  src: url("/src/public/fonts/PlaywriteAUSA-ExtraLight.ttf") format(".ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playwright";
+  src: url("/src/public/fonts/PlaywriteAUSA-Light.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playwright";
+  src: url("/src/public/fonts/PlaywriteAUSA-Regular.ttf") format(".ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playwright";
+  src: url("/src/public/fonts/PlaywriteAUSA-Thin.ttf") format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
