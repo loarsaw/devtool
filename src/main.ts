@@ -5,14 +5,7 @@ declare const MAIN_WINDOW_VITE_NAME: string;
 import started from "electron-squirrel-startup";
 import { updateElectronApp, UpdateSourceType } from "update-electron-app";
 const gotTheLock = app.requestSingleInstanceLock()
-updateElectronApp({
-  updateSource: {
-    type: UpdateSourceType.ElectronPublicUpdateService,
-    repo: 'loarsaw/devtool'
-  },
-  updateInterval: '1 hour',
-  logger: require('electron-log')
-})
+updateElectronApp()
 if (process.defaultApp) {
   if (process.argv.length >= 2) {
     app.setAsDefaultProtocolClient('electron-quick-course-xyz', process.execPath, [path.resolve(process.argv[1])])

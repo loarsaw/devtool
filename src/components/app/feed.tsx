@@ -1,6 +1,5 @@
 /* eslint-disable import/no-unresolved */
 import { getRequest, postRequest } from "@/utils/axios/service";
-import userRepoStore from "@/zustand/useStackBlitz";
 import { useQuery } from "@tanstack/react-query";
 import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Feed = () => {
   const [githubUrl, setGithubUrl] = useState<string>("");
   const navigate = useNavigate();
-  const { setRepoURL } = userRepoStore();
+  // const { setRepoURL } = userRepoStore();
   const fetchUserFeed = useCallback(async () => {
     const data = await getRequest("user-feed");
     return data;
@@ -21,7 +20,7 @@ const Feed = () => {
 
   function submit() {
     if (githubUrl.trim()) {
-      setRepoURL(githubUrl);
+      // setRepoURL(githubUrl);
       navigate("/editor");
     } else {
       console.warn("Please enter a valid GitHub URL");

@@ -2,7 +2,7 @@
   "name": "devtool",
   "productName": "devtool",
   "version": "1.0.0",
-  "description": "An  application to save my space on my disk and learn from important repositories and share them",
+  "description": "An application to save my space on my disk and learn from important repositories and share them",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -10,6 +10,10 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loarsaw/devtool"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.5.0",
