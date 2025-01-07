@@ -39,15 +39,7 @@ const config: ForgeConfig = {
     config: {
     }
   },
-  {
-    name: '@electron-forge/maker-squirrel',
-    config: {
-      // An URL to an ICO file to use as the application icon (displayed in Control Panel > Programs and Features).
-      iconUrl: 'https://url/to/icon.ico',
-      // The ICO file to use as the icon for the generated Setup.exe
-      setupIcon: './src/public/logo/logo-i.ico'
-    }
-  },
+
   {
     // Path to a single image that will act as icon for the application
     name: '@electron-forge/maker-deb',
@@ -58,13 +50,7 @@ const config: ForgeConfig = {
       }
     }
   },
-  {
-    name: '@electron-forge/maker-dmg',
-    config: {
-      icon: './src/public/logo/logo.icns'
-    }
-  },
-   
+
   ],
   plugins: [
     new VitePlugin({
