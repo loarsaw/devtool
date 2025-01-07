@@ -32,6 +32,13 @@ const config: ForgeConfig = {
   ],
   rebuildConfig: {},
   makers: [new MakerSquirrel({}), new MakerZIP({}, ['darwin']), new MakerRpm({}), new MakerDeb({}),
+
+  {
+    name: '@electron-forge/maker-zip',
+    platforms: ['darwin', 'linux'],
+    config: {
+    }
+  },
   {
     name: '@electron-forge/maker-squirrel',
     config: {
@@ -46,23 +53,18 @@ const config: ForgeConfig = {
     name: '@electron-forge/maker-deb',
     config: {
       options: {
-        icon: './src/public/logo/logo.png'
+        icon: './src/public/logo/logo.png',
+        maintainer: 'loarsaw',
       }
     }
   },
   {
-    // Path to the icon to use for the app in the DMG window
     name: '@electron-forge/maker-dmg',
     config: {
       icon: './src/public/logo/logo.icns'
     }
   },
-    // {
-    //   name: '@electron-forge/maker-wix',
-    //   config: {
-    //     icon: './src/public/logo/logo-i.ico'
-    //   }
-    // }
+   
   ],
   plugins: [
     new VitePlugin({
