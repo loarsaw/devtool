@@ -24,7 +24,7 @@ const config: ForgeConfig = {
       config: {
         repository: {
           owner: 'loarsaw',
-          name: 'devtool'
+          name: 'hmi-ui-forge'
         },
         prerelease: true
       }
