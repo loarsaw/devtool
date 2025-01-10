@@ -31,25 +31,30 @@ const config: ForgeConfig = {
     }
   ],
   rebuildConfig: {},
-  makers: [new MakerSquirrel({}), new MakerZIP({}, ['darwin']), new MakerRpm({}), new MakerDeb({}),
-
-  {
-    name: '@electron-forge/maker-zip',
-    platforms: ['darwin', 'linux'],
-    config: {
-    }
-  },
-
-  {
-    // Path to a single image that will act as icon for the application
-    name: '@electron-forge/maker-deb',
-    config: {
-      options: {
-        icon: './src/public/logo/logo.png',
-        maintainer: 'loarsaw',
+  makers: [
+    {
+      name: '@electron-forge/maker-squirrel',
+      platforms: ['darwin', 'linux'],
+      config: {
+        
       }
-    }
-  },
+    },
+    {
+      name: '@electron-forge/maker-zip',
+      platforms: ['darwin', 'linux'],
+      config: {
+      }
+    },
+
+    {
+      name: '@electron-forge/maker-deb',
+      config: {
+        options: {
+          icon: './src/public/logo/logo.png',
+          maintainer: 'loarsaw',
+        }
+      }
+    },
 
   ],
   plugins: [
