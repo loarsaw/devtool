@@ -3,11 +3,7 @@ name: Release app
 on: ["push"]
 jobs:
   build:
-    strategy:
-      matrix:
-        os:
-          - { name: "ubuntu", image: "ubuntu-latest" }
-    runs-on: ${{ matrix.os.image }}
+    runs-on: ubuntu-latest
     steps:
       - name: Github checkout
         uses: actions/checkout@v4

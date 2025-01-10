@@ -33,13 +33,6 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     {
-      name: '@electron-forge/maker-squirrel',
-      platforms: ['darwin', 'linux'],
-      config: {
-        
-      }
-    },
-    {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin', 'linux'],
       config: {
